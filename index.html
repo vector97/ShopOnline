@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Модуль 03 Урок 07 - Grid Layout</title>
+  <link rel="icon" href="favicon.svg">
+
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <header class="page__header header">
+    <div class="container header__container">
+      <a class="header__logo" href="index.html"><img src="img/header/logo.svg" alt="Логотип: ShopOnline"></a>
+
+      <button class="header__menu-btn">Меню</button>
+
+      <form class="header__search search" action="">
+        <input class="search__input" type="search" placeholder="Я ищу...">
+        <button class="search__button"></button>
+      </form>
+      <!-- /.header__search -->
+
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link navigation__link_user" href="">Профиль</a></li>
+          <li class="navigation__item"><a class="navigation__link navigation__link_cart" href="">Корзина</a></li>
+          <li class="navigation__item"><a class="navigation__link navigation__link_favourite" href="">Избранное</a></li>
+        </ul>
+      </nav>
+      <!-- /.header__navigation -->
+    </div>
+  </header>
+  <!-- /.page__header -->
+
+  <aside class="page__aside promo">
+    <div class="container">
+      <div class="promo__container">
+        <h2 class="promo__title">-50% на все ноутбуки</h2>
+
+        <div class="promo__stop">
+          <p class="promo__action">До конца акции:</p>
+
+          <div class="promo__ending">
+            <p class="promo__time">
+              <span class="promo__count">3</span>
+              <span class="promo__type">дня</span>
+            </p>
+            <!-- /.promo__time -->
+
+            <p class="promo__time">
+              <span class="promo__count">8</span>
+              <span class="promo__type">часов</span>
+            </p>
+            <!-- /.promo__time -->
+
+            <p class="promo__time">
+              <span class="promo__count">43</span>
+              <span class="promo__type">минуты</span>
+            </p>
+            <!-- /.promo__time -->
+          </div>
+          <!-- /.promo__ending -->
+        </div>
+        <!-- /.promo__stop -->
+      </div>
+    </div>
+  </aside>
+  <!-- /.page__aside -->
+
+  <main class="page__main">
+    <div class="container">
+      <div class="main__gifts">
+        <div class="main__gifts-item book">
+          <p class="main__gifts-text"><span>Книга –</span> лучший подарок</p>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item discount">
+          <p class="main__gifts-text">Время скидок!</p>
+          <div class="main__gifts-discount">-25%</div>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item sneakers">
+          <div class="main__gifts-discount">-40%</div>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item double-sneakers">
+          <p class="main__gifts-text">Вторая пара кроссовок <span>в подарок!</span></p>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item new-year">
+          <p class="main__gifts-text">Идеи новогодних подарков</p>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item notebook">
+          <p class="main__gifts-text">Выгодно в декабре!</p>
+          <div class="main__gifts-discount">-15%</div>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item decorations">
+          <p class="main__gifts-text">Новогодние украшения</p>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item dress">
+          <div class="main__gifts-discount">-55%</div>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item chemicals">
+          <p class="main__gifts-text">На бытовую химию</p>
+          <div class="main__gifts-discount">-25%</div>
+        </div>
+        <!-- /.main__gifts-item -->
+
+        <div class="main__gifts-item balls">
+
+        </div>
+        <!-- /.main__gifts-item -->
+      </div>
+      <!-- /.main__gifts -->
+
+      <section class="main__rebate rebate">
+        <h2 class="rebate__heading">Это выгодно!</h2>
+
+        <ul class="rebate__list">
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-30%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">540 ₽</ins>
+                <del class="card__price_old">890 ₽</del>
+              </p>
+              <p class="card__name">Варежки-мишки</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-50%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">1299 ₽</ins>
+                <del class="card__price_old">2598 ₽</del>
+              </p>
+              <p class="card__name">Пара футболок</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-40%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">2099₽</ins>
+                <del class="card__price_old">5938 ₽</del>
+              </p>
+              <p class="card__name">Кроссовки</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-10%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">3902 ₽</ins>
+                <del class="card__price_old">4490 ₽</del>
+              </p>
+              <p class="card__name">Постельное белье</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-30%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">2999 ₽</ins>
+                <del class="card__price_old">6030 ₽</del>
+              </p>
+              <p class="card__name">Фен</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-30%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">540 ₽</ins>
+                <del class="card__price_old">890 ₽</del>
+              </p>
+              <p class="card__name">Варежки-мишки</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-50%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">1299 ₽</ins>
+                <del class="card__price_old">2598 ₽</del>
+              </p>
+              <p class="card__name">Пара футболок</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-40%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">2099₽</ins>
+                <del class="card__price_old">5938 ₽</del>
+              </p>
+              <p class="card__name">Кроссовки</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-10%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">3902 ₽</ins>
+                <del class="card__price_old">4490 ₽</del>
+              </p>
+              <p class="card__name">Постельное белье</p>
+            </div>
+          </li>
+          <!-- /.card -->
+
+          <li class="rebate__item card">
+            <div class="card__img">
+              <div class="card__discount">-30%</div>
+            </div>
+            <!-- /.card__img -->
+
+            <div class="card__description">
+              <p class="card__price">
+                <ins class="card__price_new">2999 ₽</ins>
+                <del class="card__price_old">6030 ₽</del>
+              </p>
+              <p class="card__name">Фен</p>
+            </div>
+          </li>
+          <!-- /.card -->
+        </ul>
+        <!-- /.rebate__list -->
+      </section>
+      <!-- /.main__rebate -->
+    </div>
+  </main>
+  <!-- /.page__main -->
+</body>
+</html>

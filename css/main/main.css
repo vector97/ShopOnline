@@ -1,0 +1,405 @@
+/* page__main */
+
+.main__gifts {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(6, 245px);
+  grid-template-rows: repeat(4, 228px);
+  grid-template-areas:
+    "book discount double-sneakers double-sneakers new-year new-year"
+    "sneakers sneakers double-sneakers double-sneakers notebook notebook"
+    "decorations decorations decorations decorations dress chemicals"
+    "decorations decorations decorations decorations dress balls";
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.main__gifts-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+}
+
+.book {
+  font-size: 30px;
+  line-height: 39px;
+  align-items: flex-end;
+  grid-area: book;
+  background-image: url('../../img/main/gift-01.jpg');
+}
+
+.book span {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.discount {
+  font-size: 29px;
+  line-height: 39px;
+  font-weight: 700;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 14px;
+  grid-area: discount;
+  background-image: url('../../img/main/gift-02.jpg');
+}
+
+.discount .main__gifts-discount {
+  align-self: flex-end;
+}
+
+.sneakers {
+  grid-area: sneakers;
+  background-image: url('../../img/main/gift-03.jpg');
+}
+
+.double-sneakers {
+  align-items: flex-end;
+  grid-area: double-sneakers;
+  background-image: url('../../img/main/gift-04.jpg');
+}
+
+.double-sneakers .main__gifts-text {
+  font-size: 40px;
+  line-height: 48px;
+  padding: 24px 26px;
+  background-color: #38c0eb;
+  border-radius: 20px;
+}
+
+.double-sneakers span {
+  font-size: 56px;
+  line-height: 67px;
+  font-weight: 700;
+}
+
+.new-year {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  align-items: flex-end;
+  grid-area: new-year;
+  background-image: url('../../img/main/gift-05.jpg');
+}
+
+.notebook {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  justify-content: space-between;
+  align-items: last baseline;
+  grid-area: notebook;
+  background-image: url('../../img/main/gift-06.jpg');
+}
+
+.decorations {
+  align-items: flex-end;
+  grid-area: decorations;
+  background-image: url('../../img/main/gift-07.jpg');
+}
+
+.decorations .main__gifts-text {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #f91155;
+  text-transform: uppercase;
+  padding: 30px 42px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.dress {
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-area: dress;
+  background-image: url('../../img/main/gift-08.jpg');
+}
+
+.chemicals {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  grid-area: chemicals;
+  background-image: url('../../img/main/gift-09.jpg');
+}
+
+.balls {
+  grid-area: balls;
+  background-image: url('../../img/main/gift-10.jpg');
+}
+
+.main__gifts-discount {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #ffbd13;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main__rebate */
+
+.main__rebate {
+  margin-bottom: 50px;
+}
+
+.rebate__heading {
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.rebate__list {
+  display: grid;
+  grid-template-columns: repeat(5, 306px);
+  grid-template-rows: 394px;
+  grid-auto-rows: 394px;
+  gap: 50px 60px;
+}
+
+/* card */
+
+.card__img {
+  padding: 20px;
+  width: 306px;
+  height: 295px;
+  margin-bottom: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card:nth-child(5n + 1) .card__img {
+  background-image: url('../../img/main/rebate-01.jpg');
+}
+
+.card:nth-child(5n + 2) .card__img {
+  background-image: url('../../img/main/rebate-02.jpg');
+}
+
+.card:nth-child(5n + 3) .card__img {
+  background-image: url('../../img/main/rebate-03.jpg');
+}
+
+.card:nth-child(5n + 4) .card__img {
+  background-image: url('../../img/main/rebate-04.jpg');
+}
+
+.card:nth-child(5n + 5) .card__img {
+  background-image: url('../../img/main/rebate-05.jpg');
+}
+
+.card__discount {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #ffbd13;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__price_new {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card__price_old {
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+}
+
+.card__name {
+  line-height: 33px;
+}
+
+/* main article */
+
+.container__article {
+  display: flex;
+}
+
+.main {
+  max-width: 60%;
+  margin-right: 145px;
+}
+
+.article {
+  margin-bottom: 100px;
+}
+
+.article__bread-crumbs {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #525252;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.article__heading {
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.article__heading + .article__text {
+  margin-bottom: 50px;
+}
+
+.section__heading + .section__text {
+  margin-bottom: 33px;
+}
+
+.text__block {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.text__block + .text__block {
+  margin-top: 66px;
+}
+
+.text {
+  line-height: 33px;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.menu {
+  margin-top: 50px;
+  margin-bottom: 55px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #525252;
+}
+
+.menu ol {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.menu__item {
+  display: block;
+}
+
+.article__image,
+.section__image {
+  max-width: 100%;
+  margin-bottom: 55px;
+}
+
+.section__heading {
+  margin: 0;
+}
+
+.article__footer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+
+.article__back {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.article__back::before {
+  content: '\2190';
+  margin-right: 13px;
+}
+
+.article__author {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.article__author-name {
+  font-size: 22px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.article__time {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #8f8f8f;
+}
+
+.article__statistics {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #8f8f8f;
+  display: flex;
+  gap: 37px;
+  margin-top: 15px;
+}
+
+.article__view,
+.article__comments {
+  display: flex;
+  align-items: center;
+}
+
+.article__view::before,
+.article__comments::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article__view::before {
+  background-image: url('../../img/main/view.svg');
+  margin-right: 4px;
+}
+
+.article__comments::before {
+  background-image: url('../../img/main/comment.svg');
+  margin-right: 9px;
+}

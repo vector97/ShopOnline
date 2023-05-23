@@ -5,6 +5,7 @@
 }
 
 .promo__container {
+  height: 480px;
   color: #ffffff;
   background-image: url('../../img/aside/banner.jpg');
   background-size: cover;

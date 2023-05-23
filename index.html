@@ -12,6 +12,8 @@
   <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/timer.js" defer></script>
 </head>
 <body class="page">
   <header class="page__header header">
@@ -21,7 +23,8 @@
       <button class="header__menu-btn">Меню</button>
 
       <form class="header__search search" action="">
-        <input class="search__input" type="search" placeholder="Я ищу...">
+        <label class="visually-hidden" for="search">Поиск</label>
+        <input class="search__input" id="search" type="search" placeholder="Я ищу...">
         <button class="search__button"></button>
       </form>
       <!-- /.header__search -->
@@ -43,30 +46,7 @@
       <div class="promo__container">
         <h2 class="promo__title">-50% на все ноутбуки</h2>
 
-        <div class="promo__stop">
-          <p class="promo__action">До конца акции:</p>
-
-          <div class="promo__ending">
-            <p class="promo__time">
-              <span class="promo__count">3</span>
-              <span class="promo__type">дня</span>
-            </p>
-            <!-- /.promo__time -->
-
-            <p class="promo__time">
-              <span class="promo__count">8</span>
-              <span class="promo__type">часов</span>
-            </p>
-            <!-- /.promo__time -->
-
-            <p class="promo__time">
-              <span class="promo__count">43</span>
-              <span class="promo__type">минуты</span>
-            </p>
-            <!-- /.promo__time -->
-          </div>
-          <!-- /.promo__ending -->
-        </div>
+        <div class="promo__stop timer" data-deadline="2023-05-30 21:31"></div>
         <!-- /.promo__stop -->
       </div>
     </div>
